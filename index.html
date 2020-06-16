@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake3D</title>
+    <style>
+    html, body {
+        padding: 0;
+        margin: 0;
+        background-color: #6200ee;
+    }
+    .slidercontainer{
+        width: 40%;
+        margin-top: 20px;
+    }
+    .slider{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+    }
+    .slider :: before{
+        content: "0";
+        color: white;
+        font-size: 20px;
+    }
+    .sliderconatiner p{
+        position: absolute;
+        left: 90%;
+        top: 6%;
+        color: #fff;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="sliderconatiner">
+        <input type="range" min="1" max="100" value="1" class="slider" id="slider">
+        <p>Speed : <span id="value"></span></p>
+    </div>
+    <script src="./three.js"></script>
+    <script src="./OrbitControls.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
